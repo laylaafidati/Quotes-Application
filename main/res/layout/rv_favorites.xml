@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:orientation="vertical"
+    app:contentPadding="10dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/quicksand"
+            android:text="Tags:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_tagsFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="90dp"
+            android:fontFamily="@font/quicksand"
+            android:text="....."
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tv_tagsFav"
+            android:fontFamily="@font/quicksand"
+            android:text="Author:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_authorFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="90dp"
+            android:layout_below="@+id/tv_tagsFav"
+            android:fontFamily="@font/quicksand"
+            android:text="....."
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tv_authorFav"
+            android:fontFamily="@font/quicksand"
+            android:text="Content:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_contentFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="90dp"
+            android:layout_below="@+id/tv_authorFav"
+            android:fontFamily="@font/quicksand"
+            android:text="....."
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_contentFav"
+            android:layout_alignParentEnd="true"
+            android:text="Unfavorite"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

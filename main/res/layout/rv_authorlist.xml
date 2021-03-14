@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:orientation="vertical"
+    app:contentPadding="10dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/quicksand"
+            android:text="Name:"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="135dp"
+            android:fontFamily="@font/quicksand"
+            android:text="....."
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tv_name"
+            android:fontFamily="@font/quicksand"
+            android:text="Total Quotes:"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_totalQuotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="135dp"
+            android:layout_below="@+id/tv_name"
+            android:fontFamily="@font/quicksand"
+            android:text="....."
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tv_totalQuotes"
+            android:fontFamily="@font/quicksand"
+            android:text="Biography:"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_biography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="135dp"
+            android:layout_below="@+id/tv_totalQuotes"
+            android:fontFamily="@font/quicksand"
+            android:text="....."
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:maxLength="61"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
